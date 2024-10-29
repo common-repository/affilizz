@@ -1,0 +1,1052 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Affilizz : Affiliation, reinvented.\n"
+"POT-Creation-Date: 2024-10-17 11:51+0200\n"
+"PO-Revision-Date: 2024-10-17 11:51+0200\n"
+"Last-Translator: Romain Carlier <romain@reaklab.com>\n"
+"Language-Team: Romain Carlier <romain@reaklab.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: init.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: languages/_assets/vendor\n"
+"X-Poedit-SearchPathExcluded-1: assets/vendor\n"
+"X-Poedit-SearchPathExcluded-2: assets/src/components/affilizz-embed/"
+"node_modules\n"
+
+#: assets/dist/blocks/publication/editor.js:1
+#: assets/src/blocks/publication/edit.js:96
+#: assets/src/blocks/publication/editor.js:16 classes/Ajax.php:173
+#: classes/Core.php:497 classes/Core.php:498
+#: templates/administration/editor/classic/block.php:13
+#: templates/administration/editor/elementor/controls.php:9
+msgid "Affilizz affiliate content"
+msgstr "Contenu d’affiliation Affilizz"
+
+#: assets/dist/blocks/publication/editor.js:1
+#: assets/src/blocks/publication/editor.js:17
+msgid "Insert affiliate content from your Affilizz account"
+msgstr "Insérer du contenu affilié à partir de votre compte Affilizz"
+
+#: assets/dist/blocks/publication/editor.js:1
+#: assets/src/blocks/publication/editor.js:19
+msgid "affiliate"
+msgstr "affiliation"
+
+#: assets/dist/blocks/publication/editor.js:1
+#: assets/src/blocks/publication/editor.js:20
+msgid "affiliated"
+msgstr "affilié"
+
+#: assets/dist/blocks/publication/editor.js:1
+#: assets/src/blocks/publication/editor.js:21
+msgid "publication"
+msgstr "publication"
+
+#: assets/dist/js/editor.js:1424 assets/dist/js/wizard.js:1424
+msgctxt "text direction"
+msgid "ltr"
+msgstr "ltr"
+
+#: assets/src/blocks/publication/edit.js:38
+msgid "Unable to get the preview of the publication"
+msgstr "Impossible d'obtenir l'aperçu de la publication"
+
+#: assets/src/blocks/publication/edit.js:72
+msgid "There is an error with Affilizz API: "
+msgstr "Il y a une erreur avec l'API Affilizz : "
+
+#: assets/src/blocks/publication/edit.js:85
+msgid "Rendering in progress…"
+msgstr "Rendu en cours…"
+
+#: assets/src/blocks/publication/edit.js:95
+#: templates/administration/editor/elementor/controls.php:13
+msgid ""
+"To select or update the publication contents displayed here, please open the "
+"configuration pane below."
+msgstr ""
+"Pour sélectionner ou mettre à jour le contenu de la publication affichée "
+"ici, veuillez ouvrir le panneau de configuration ci-dessous."
+
+#: assets/src/blocks/publication/edit.js:99
+msgid "Edit content"
+msgstr "Modifier le contenu"
+
+#: assets/src/blocks/publication/edit.js:100
+#: templates/administration/editor/elementor/controls.php:17
+msgid "Add content"
+msgstr "Ajouter du contenu"
+
+#: assets/src/js/wizard.js:61
+msgid "Loading..."
+msgstr "Chargement..."
+
+#: classes/API.php:312
+#, php-format
+msgid "Error : %s"
+msgstr "Erreur : %s"
+
+#: classes/Ajax.php:61
+msgid "Untitled publication"
+msgstr "Publication sans titre"
+
+#: classes/Ajax.php:116
+msgid "Untitled publication content"
+msgstr "Contenu de publication sans titre"
+
+#: classes/Ajax.php:171 templates/administration/editor/classic/block.php:11
+#: templates/administration/editor/classic/button.php:8
+#: templates/administration/editor/classic/button.php:15
+#: templates/administration/editor/classic/modal.php:6
+#: templates/administration/editor/classic/modal.php:12
+#: templates/administration/page/partial/sidebar.php:8
+#: templates/administration/page/wizard.php:40
+msgid "Affilizz logo"
+msgstr "Logo d’Affilizz"
+
+#: classes/Core.php:489 classes/Core.php:524
+msgid "Insert publication"
+msgstr "Insérer une publication"
+
+#: classes/Core.php:490
+msgid "Update publication"
+msgstr "Mettre à jour la publication"
+
+#: classes/Core.php:493
+msgid "Insert affiliate publication"
+msgstr "Insérer une publication"
+
+#: classes/Core.php:494
+msgid "Update / edit affiliate publication"
+msgstr "Mettre à jour / modifier la publication d’affiliation"
+
+#: classes/Core.php:500
+msgid "Recent"
+msgstr "Récent"
+
+#: classes/Core.php:502
+msgid "Remove this item"
+msgstr "Supprimer cet élément"
+
+#: classes/Core.php:503
+msgid "Undefined publication content"
+msgstr "Contenu de publication non défini"
+
+#: classes/Core.php:507 classes/Core.php:509
+msgid "Error"
+msgstr "Erreur"
+
+#: classes/Core.php:508
+msgid "Information"
+msgstr "Informations"
+
+#: classes/Core.php:510
+msgid "Success"
+msgstr "Succés"
+
+#: classes/Core.php:513
+msgid "You cannot insert content in text mode"
+msgstr "Vous ne pouvez pas insérer de contenu en mode texte"
+
+#: classes/Core.php:514
+msgid "Cannot insert content"
+msgstr "Impossible d’insérer du contenu"
+
+#: classes/Core.php:515
+msgid "Please switch to the visual editor."
+msgstr "Veuillez passer à l’éditeur visuel."
+
+#: classes/Core.php:529
+msgid "Loading…"
+msgstr "Chargement…"
+
+#: classes/Core.php:530 templates/administration/editor/classic/modal.php:43
+#: templates/administration/editor/classic/modal.php:65
+msgid "Fetching content…"
+msgstr "Téléchargement de contenu…"
+
+#: classes/Core.php:531 templates/administration/page/wizard/connect.php:35
+#: templates/administration/page/wizard/select.php:64
+msgid "Next"
+msgstr "Suivant"
+
+#: classes/Core.php:532
+msgid "Entities"
+msgstr "Entités"
+
+#: classes/Core.php:533 templates/administration/page/wizard/select.php:34
+msgid "Media"
+msgstr "Média"
+
+#: classes/Core.php:534 templates/administration/page/wizard/select.php:45
+msgid "Channel"
+msgstr "Canal"
+
+#: classes/Core.php:536
+msgctxt "Affilizz content type"
+msgid "Publication"
+msgstr "Publication"
+
+#: classes/Core.php:537
+msgctxt "Affilizz content type"
+msgid "Link"
+msgstr "Lien"
+
+#: classes/Core.php:538
+msgctxt "Affilizz content type"
+msgid "Comparison table"
+msgstr "Tableau de prix"
+
+#: classes/Core.php:539
+msgctxt "Affilizz content type"
+msgid "Card"
+msgstr "Carte"
+
+#: classes/Core.php:540
+msgctxt "Affilizz content type"
+msgid "Button"
+msgstr "Bouton"
+
+#: classes/Core.php:541
+msgctxt "Affilizz content type"
+msgid "Carousel"
+msgstr "Carrousel"
+
+#. Plugin Name of the plugin/theme
+#: classes/Editor/Divi.php:22 classes/Editor/Divi.php:29
+#: classes/Editor/Elementor.php:14 classes/Page/Settings.php:18 init.php:29
+#: templates/administration/page/partial/sidebar.php:11
+msgid "Affilizz"
+msgstr "Affilizz"
+
+#: classes/Editor/Divi.php:32
+msgid "Embed an Affilizz publication."
+msgstr "Intégrer une publication Affilizz."
+
+#: classes/Editor/Elementor.php:32 classes/Page/Wizard.php:19
+#: templates/administration/page/settings/configuration.php:19
+msgid "Configuration"
+msgstr "Configuration"
+
+#: classes/Page/Settings.php:19
+msgid "Affilizz plugin configuration"
+msgstr "Configuration du plugin Affilizz"
+
+#: classes/Page/Settings.php:31
+msgid ""
+"Configure the general settings and define the important variables for the "
+"Affilizz plugin."
+msgstr ""
+"Configurez les paramètres généraux et définissez les variables importantes "
+"pour le plugin Affilizz."
+
+#: classes/Page/Wizard.php:66
+msgid "This API key is invalid"
+msgstr "Cette clé API n’est pas valide"
+
+#: classes/Page/Wizard.php:74
+msgid "Please provide an API key, the field seems empty."
+msgstr "Veuillez fournir une clé API, le champ semble vide."
+
+#: classes/Page/Wizard.php:97
+msgid ""
+"You don't have any organization on your account. Please create your first "
+"organization before installing this plugin."
+msgstr ""
+"Vous n’avez aucune organisation sur votre compte. Veuillez créer votre "
+"première organisation avant d’installer ce plugin."
+
+#: classes/Page/Wizard.php:122
+msgid ""
+"No media found for this organization. Please choose another organization or "
+"create your first media for this organization before installing this plugin."
+msgstr ""
+"Aucun média trouvé pour cette organisation. Veuillez choisir une autre "
+"organisation ou créer votre premier média pour cette organisation avant "
+"d’installer ce plugin."
+
+#: classes/Page/Wizard.php:147
+msgid ""
+"No channels found for this media. Please choose another media or create your "
+"first channel for this media before installing this plugin."
+msgstr ""
+"Aucun canal trouvé pour ce média. Veuillez choisir un autre média ou créer "
+"votre premier canal pour ce média avant d’installer ce plugin."
+
+#: classes/Page/Wizard.php:184
+msgid "You must pick an organization, a media and a channel to continue"
+msgstr ""
+"Vous devez choisir une organisation, un média et un canal pour continuer"
+
+#: classes/Shortcode/Publication.php:244
+msgid ""
+"This publication does not exist in the database. It was either deleted, or "
+"its ID does not exist."
+msgstr ""
+"Cette publication n’existe pas en base de données. Soit la table a été "
+"vidée, soit son ID n’existe pas."
+
+#: classes/Util/Analytics.php:19
+#: templates/administration/page/settings/rendering.php:6
+msgid "Web component (default)"
+msgstr "Composant web (par défaut)"
+
+#: classes/Util/Analytics.php:20
+#: templates/administration/page/settings/rendering.php:9
+msgid "Server-side rendering (SSR)"
+msgstr "Server-side rendering (SSR)"
+
+#: classes/Util/Analytics.php:23 classes/Util/Analytics.php:25
+#: classes/Util/Analytics.php:29 classes/Util/Analytics.php:89
+#: classes/Util/Analytics.php:93 classes/Util/Analytics.php:97
+#: classes/Util/Analytics.php:101 classes/Util/Analytics.php:105
+#: classes/Util/Analytics.php:109 classes/Util/Analytics.php:113
+#: classes/Util/Analytics.php:117 classes/Util/Analytics.php:121
+#: classes/Util/Analytics.php:133 classes/Util/Analytics.php:137
+#: classes/Util/Analytics.php:141 classes/Util/Analytics.php:145
+#: classes/Util/Filters.php:66
+msgid "N/A"
+msgstr "N/D"
+
+#: classes/Util/Analytics.php:26 classes/Util/Analytics.php:30
+msgid "Enabled"
+msgstr "Activé"
+
+#: classes/Util/Analytics.php:27 classes/Util/Analytics.php:31
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: classes/Util/Analytics.php:36
+msgid "WordPress manifest version"
+msgstr "Version du manifeste WordPress"
+
+#: classes/Util/Analytics.php:40
+msgid "PHP version"
+msgstr "Version PHP"
+
+#: classes/Util/Analytics.php:44
+msgid "Required PHP version"
+msgstr "Version PHP requise"
+
+#: classes/Util/Analytics.php:48
+msgid "MySQL version"
+msgstr "Version MySQL"
+
+#: classes/Util/Analytics.php:52
+msgid "Required MySQL version"
+msgstr "Version de MySQL requise"
+
+#: classes/Util/Analytics.php:56
+msgid "Operating system"
+msgstr "Système d’exploitation"
+
+#: classes/Util/Analytics.php:60
+msgid "PHP web server"
+msgstr "Serveur web PHP"
+
+#: classes/Util/Analytics.php:64
+msgid "WordPress version"
+msgstr "Version de WordPress"
+
+#: classes/Util/Analytics.php:68
+msgid "TinyMCE version"
+msgstr "Version de TinyMCE"
+
+#: classes/Util/Analytics.php:72
+msgid "Theme name"
+msgstr "Nom du thème"
+
+#: classes/Util/Analytics.php:76
+msgid "Active plugins"
+msgstr "Extensions actives"
+
+#: classes/Util/Analytics.php:80
+msgid "Current locale"
+msgstr "Locale actuelle"
+
+#: classes/Util/Analytics.php:81
+msgid "Unknown locale"
+msgstr "Locale inconnue"
+
+#: classes/Util/Analytics.php:84
+msgid "Multisite installation"
+msgstr "Installation multisite"
+
+#: classes/Util/Analytics.php:85 classes/Util/Analytics.php:176
+msgid "Yes"
+msgstr "Oui"
+
+#: classes/Util/Analytics.php:85 classes/Util/Analytics.php:176
+msgid "No"
+msgstr "Non"
+
+#: classes/Util/Analytics.php:88
+msgid "Document root"
+msgstr "Dossier racine"
+
+#: classes/Util/Analytics.php:92 classes/Util/Analytics.php:96
+msgid "Affilizz version"
+msgstr "Version Affilizz"
+
+#: classes/Util/Analytics.php:100
+msgid "Option value : Channel"
+msgstr "Valeur d’option : Canal"
+
+#: classes/Util/Analytics.php:104
+msgid "Option value : Organization"
+msgstr "Valeur d’option : Organisation"
+
+#: classes/Util/Analytics.php:108
+msgid "Option value : Media"
+msgstr "Valeur d’option : Média"
+
+#: classes/Util/Analytics.php:112
+msgid "Option value : API Key"
+msgstr "Valeur d’option : Clé d’API"
+
+#: classes/Util/Analytics.php:116
+msgid "Current proxy UUID"
+msgstr "UUID du proxy actuel"
+
+#: classes/Util/Analytics.php:120
+msgid "Affilizz plugin version"
+msgstr "Version du plugin Affilizz"
+
+#: classes/Util/Analytics.php:124
+msgid "Affilizz rendering mode"
+msgstr "Mode de rendu Affilizz"
+
+#: classes/Util/Analytics.php:128
+msgid "Affilizz javascript file injection"
+msgstr "Injection de fichier javascript Affilizz"
+
+#: classes/Util/Analytics.php:132
+msgid "Option value : Selective enqueue"
+msgstr "Valeur d’option : Chargement sélectif"
+
+#: classes/Util/Analytics.php:136
+msgid "Option value : Organization label"
+msgstr "Valeur d’option : Label d’organisation"
+
+#: classes/Util/Analytics.php:140
+msgid "Option value : Media label"
+msgstr "Valeur d’option : Label du Média"
+
+#: classes/Util/Analytics.php:144
+msgid "Option value : Channel label"
+msgstr "Valeur d’option : Label du Canal"
+
+#: classes/Util/Analytics.php:163
+msgid "Unknown server flavor"
+msgstr "Type de serveur inconnue"
+
+#: classes/Util/Analytics.php:176
+#, php-format
+msgid "Network : %s"
+msgstr "Réseau : %s"
+
+#: classes/Util/Generic.php:17
+msgid "Cheating, huh ?"
+msgstr "En train de tricher?"
+
+#: classes/Util/Notices.php:54
+#, php-format
+msgid ""
+"%1$sWarning%2$s : Your Affilizz %1$schannel%2$s seems to be inexistant or "
+"wrongly defined. Please %3$sre-execute our wizard%4$s to redefine these "
+"values."
+msgstr ""
+"%1$sAttention%2$s : Votre %1$scanal%2$s Affilizz semble ne pas exister ou "
+"être mal défini. Veuillez %3$sréexécuter notre assistant%4$s pour redéfinir "
+"ces valeurs."
+
+#: classes/Util/Notices.php:69
+#, php-format
+msgid ""
+"%1$sWarning%2$s : Your Affilizz %1$smedia%2$s seems to be inexistant or "
+"wrongly defined. Please %3$sre-execute our wizard%4$s to redefine these "
+"values."
+msgstr ""
+"%1$sAttention%2$s : Votre %1$smédia%2$s Affilizz semble ne pas exister ou "
+"être mal défini. Veuillez %3$sréexécuter notre assistant%4$s pour redéfinir "
+"ces valeurs."
+
+#. Description of the plugin/theme
+#: init.php:30
+msgid ""
+"Affilizz allows you to manage all your affiliated content in one place "
+"regardless of your activity."
+msgstr ""
+"Affilizz vous permet de gérer vos contenus d’affiliation en un seul endroit "
+"quelle que soit votre activité."
+
+#: templates/administration/editor/classic/button.php:6
+#: templates/administration/editor/classic/button.php:10
+#: templates/administration/editor/classic/button.php:14
+msgid "Insert affiliate content"
+msgstr "Insérer du contenu d’affiliation"
+
+#: templates/administration/editor/classic/modal.php:7
+msgid "Loading in progress"
+msgstr "Chargement en cours"
+
+#: templates/administration/editor/classic/modal.php:21
+#: templates/administration/editor/classic/modal.php:22
+msgid "Refresh"
+msgstr "Actualiser"
+
+#: templates/administration/editor/classic/modal.php:31
+msgid "Insert affiliate content from Affilizz"
+msgstr "Insérer du contenu d’affiliation à partir d’Affilizz"
+
+#: templates/administration/editor/classic/modal.php:32
+msgid "Choose an Affilizz publication"
+msgstr "Sélectionnez une publication Affilizz"
+
+#: templates/administration/editor/classic/modal.php:35
+msgid "Publication"
+msgstr "Publication"
+
+#: templates/administration/editor/classic/modal.php:47
+#: templates/administration/editor/classic/modal.php:48
+#: templates/administration/editor/classic/modal.php:49
+msgid "Open this publication in Affilizz"
+msgstr "Ouvrir cette publication dans Affilizz"
+
+#: templates/administration/editor/classic/modal.php:54
+msgctxt "List of contents in the insert publication modal."
+msgid "And which content from it"
+msgstr "Et le contenu de cette publication &agrave; utiliser"
+
+#: templates/administration/editor/classic/modal.php:57
+msgid "Affiliate content(s)"
+msgstr "Contenu(s) d’affiliation"
+
+#: templates/administration/editor/classic/modal.php:58
+msgid "You can add multiple content"
+msgstr "Vous pouvez ajouter plusieurs contenus"
+
+#: templates/administration/editor/classic/modal.php:61
+msgid "Search for a publication content"
+msgstr "Rechercher un des contenus de cette publication"
+
+#: templates/administration/editor/classic/modal.php:70
+msgid ""
+"If your publication or content does not appear, make sure you have created "
+"it in Affilizz and refresh this page."
+msgstr ""
+"Si votre publication ou votre contenu n’apparaît pas, assurez-vous de "
+"l’avoir créé dans Affilizz et actualisez cette page."
+
+#: templates/administration/editor/classic/modal.php:71
+#: templates/administration/editor/classic/modal.php:72
+msgid "Open Affilizz in a new tab."
+msgstr "Ouvrir Affilizz dans un nouvel onglet."
+
+#: templates/administration/editor/classic/modal.php:85
+msgid "Insert content"
+msgstr "Insérer ce contenu"
+
+#: templates/administration/page/partial/sidebar.php:14
+msgid "Plugin settings"
+msgstr "Paramètres du plugin"
+
+#: templates/administration/page/partial/sidebar.php:19
+msgid "Settings"
+msgstr "Paramètres"
+
+#: templates/administration/page/partial/sidebar.php:20
+#: templates/administration/page/partial/sidebar.php:21
+#: templates/administration/page/settings/configuration.php:16
+msgid "General plugin setup"
+msgstr "Configuration générale du plugin"
+
+#: templates/administration/page/partial/sidebar.php:24
+#: templates/administration/page/partial/sidebar.php:26
+#: templates/administration/page/settings/advanced.php:8
+#: templates/administration/page/settings/advanced.php:11
+msgid "Advanced settings"
+msgstr "Paramètres avancés"
+
+#: templates/administration/page/partial/sidebar.php:25
+msgctxt "Settings page"
+msgid "Rendering, maintenance"
+msgstr "Rendu, maintenance"
+
+#: templates/administration/page/settings.php:12
+#: templates/administration/page/settings/configuration.php:5
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+
+#: templates/administration/page/settings/advanced.php:12
+msgid "Render options and advanced tasks"
+msgstr "Options de rendu et tâches avancées"
+
+#: templates/administration/page/settings/configuration.php:20
+msgid "General settings & variables for the Affilizz Plugin"
+msgstr "Paramètres généraux et variables pour le plugin Affilizz"
+
+#: templates/administration/page/settings/configuration.php:26
+msgid "API"
+msgstr "API"
+
+#: templates/administration/page/settings/configuration.php:32
+msgid "API key"
+msgstr "Clé API"
+
+#: templates/administration/page/settings/configuration.php:36
+#: templates/administration/page/wizard/connect.php:21
+msgid "Go to the key location help page"
+msgstr "Accéder à la page d’aide sur l’emplacement des clés API"
+
+#: templates/administration/page/settings/configuration.php:37
+#: templates/administration/page/wizard/connect.php:9
+#: templates/administration/page/wizard/connect.php:22
+msgid "Illustration of the link between WordPress and Affilizz"
+msgstr "Illustration du lien entre WordPress et Affilizz"
+
+#: templates/administration/page/settings/configuration.php:38
+#: templates/administration/page/wizard/connect.php:23
+msgid "Where can I find my key?"
+msgstr "Où puis-je trouver ma clé ?"
+
+#: templates/administration/page/settings/configuration.php:40
+msgid ""
+"Make sure to use the WordPress API Key from your Affilizz user account, do "
+"not confuse it with an Affilizz access token."
+msgstr ""
+"Assurez-vous d'utiliser la clé API WordPress de votre compte utilisateur "
+"Affilizz, ne la confondez pas avec un jeton d'accès Affilizz."
+
+#: templates/administration/page/settings/configuration.php:44
+msgid "Debug information"
+msgstr "Information de débogage"
+
+#: templates/administration/page/settings/configuration.php:48
+msgid "Identification"
+msgstr "Identification"
+
+#: templates/administration/page/settings/configuration.php:51
+msgid "Organization ID"
+msgstr "ID de l'organisation"
+
+#: templates/administration/page/settings/configuration.php:54
+#, php-format
+msgctxt "Configuration debug panel"
+msgid "This ID refers to the organization : %1$s%3$s%2$s."
+msgstr "Cet identifiant correspond à l’organisation : %1$s%3$s%2$s."
+
+#: templates/administration/page/settings/configuration.php:56
+msgid "Undefined organization"
+msgstr "Organisation non définie"
+
+#: templates/administration/page/settings/configuration.php:63
+msgid "Media ID"
+msgstr "ID du média"
+
+#: templates/administration/page/settings/configuration.php:66
+#, php-format
+msgctxt "Configuration debug panel"
+msgid "This ID refers to the media : %1$s%3$s%2$s."
+msgstr "Cet identifiant correspond au média : %1$s%3$s%2$s."
+
+#: templates/administration/page/settings/configuration.php:68
+msgid "Undefined media"
+msgstr "Média non défini"
+
+#: templates/administration/page/settings/configuration.php:75
+msgid "Channel ID"
+msgstr "ID du canal"
+
+#: templates/administration/page/settings/configuration.php:78
+#, php-format
+msgctxt "Configuration debug panel"
+msgid "This ID refers to the channel : %1$s%3$s%2$s."
+msgstr "Cet identifiant correspond au canal : %1$s%3$s%2$s."
+
+#: templates/administration/page/settings/configuration.php:80
+msgid "Undefined channel"
+msgstr "Canal non défini"
+
+#: templates/administration/page/settings/configuration.php:88
+#, php-format
+msgctxt "Configuration debug panel"
+msgid ""
+"If this configuration seems incomplete or faulty, please %1$srun the "
+"installation wizard%2$s again or contact us."
+msgstr ""
+"Si cette configuration semble incomplète ou défectueuse, veuillez "
+"%1$sexécuter à nouveau l’assistant%2$s ou contactez-nous."
+
+#: templates/administration/page/settings/configuration.php:92
+msgid "Cache busting"
+msgstr "Suppression du cache"
+
+#: templates/administration/page/settings/configuration.php:96
+msgid "Clear local file cache"
+msgstr "Vider le cache local du fichier de rendu"
+
+#: templates/administration/page/settings/configuration.php:100
+msgid "Local cache has not been generated yet."
+msgstr "Le cache local n’a pas encore été généré."
+
+#: templates/administration/page/settings/configuration.php:102
+#, php-format
+msgid "Last local file cache generation : %s ago (%s)"
+msgstr "Dernière génération du fichier de cache local : Il y a %s (%s)"
+
+#: templates/administration/page/settings/rendering.php:7
+#, php-format
+msgid "%1$sRecommended%2$s - Your affiliate content is loaded after the page."
+msgstr ""
+"%1$sRecommandé%2$s - Votre contenu d’affiliation est chargé après la page."
+
+#: templates/administration/page/settings/rendering.php:7
+msgid "There is no conflict possible with your CSS&hellip;"
+msgstr "Il n’y a pas de conflit possible avec votre CSS&hellip;"
+
+#: templates/administration/page/settings/rendering.php:10
+msgid ""
+"Your affiliate content is loaded alongside the page. There could be "
+"conflicts with your CSS."
+msgstr ""
+"Votre contenu d’affiliation est chargé au même moment que le contenu. Il "
+"pourrait y avoir des conflits avec votre CSS."
+
+#: templates/administration/page/settings/rendering.php:19
+msgid "Rendering mode"
+msgstr "Mode de rendu"
+
+#: templates/administration/page/settings/technical.php:5
+msgid "Request proxy"
+msgstr "Proxy pour les URL des scripts"
+
+#: templates/administration/page/settings/technical.php:12
+msgid "Icon of two arrows representing a refresh action"
+msgstr "Icône de deux flèches représentant une action d’actualisation"
+
+#: templates/administration/page/settings/technical.php:13
+msgid "Refresh / regenerate"
+msgstr "Rafraîchir / régénérer"
+
+#: templates/administration/page/settings/technical.php:17
+msgid ""
+"This feature is used to help adblockers and third-party plugins to discern "
+"our affiliated links from standard advertisement."
+msgstr ""
+"Cette fonctionnalité est utilisée pour aider les adblockers et les plugins "
+"tiers à distinguer nos liens affiliés des publicités standard."
+
+#: templates/administration/page/settings/technical.php:18
+msgid "Only click on this button :"
+msgstr "Ne cliquez sur ce bouton que :"
+
+#: templates/administration/page/settings/technical.php:20
+msgid ""
+"If you encounter issued where ads are displayed in the back-office editor "
+"but not on the live website"
+msgstr ""
+"Si les annonces sont affichées dans l'éditeur du back-office mais pas sur le "
+"site web public"
+
+#: templates/administration/page/settings/technical.php:21
+msgid "If you notice a script being rejected by standard adblockers"
+msgstr ""
+"Si vous remarquez qu'un script est rejeté par les bloqueurs de publicité "
+"standards"
+
+#: templates/administration/page/settings/technical.php:22
+msgid "If you are requested to do so by an affilizz administrator"
+msgstr ""
+"Si un administrateur d'Affilizz vous en fait la demande pendant une session "
+"d’aide"
+
+#: templates/administration/page/settings/technical.php:27
+msgid "Script management"
+msgstr "Gestion des scripts"
+
+#: templates/administration/page/settings/technical.php:36
+msgid "Enable selective script enqueuing"
+msgstr "Activer l’injection du script sélective"
+
+#: templates/administration/page/settings/technical.php:37
+msgid "Only load the script on pages containing our rendering tags."
+msgstr ""
+"Ne charge le script que si le contenu de l’article / page contient des "
+"balises de rendu Affilizz."
+
+#: templates/administration/page/settings/technical.php:46
+msgid "Danger zone"
+msgstr "Danger zone"
+
+#: templates/administration/page/settings/technical.php:53
+msgid "Disable javascript load of the rendering script"
+msgstr "Désactiver la charge javascript du script de rendu"
+
+#: templates/administration/page/settings/technical.php:55
+msgid ""
+"Only disable this if you want to load a distinct, local version of the "
+"script."
+msgstr ""
+"Ne désactivez cette option que si vous souhaitez charger une version locale "
+"distincte du script."
+
+#: templates/administration/page/settings/technical.php:64
+msgid "Delete the rendered publications database table"
+msgstr ""
+"Supprimer la table de la base de données contenant les publications Affilizz"
+
+#: templates/administration/page/settings/technical.php:67
+msgid "Checking this option will make the previous rendering blocks void."
+msgstr ""
+"Cocher et remplir ces champs va annuler l’affichage des blocs précédemment "
+"insérés."
+
+#: templates/administration/page/settings/technical.php:72
+#, php-format
+msgid ""
+"To confirm this action, please enter the text below in the following input "
+"THEN save: %s%s%s"
+msgstr ""
+"Pour confirmer cette action, veuillez entrer ceci dans le champ suivant "
+"(puis enregistrez) : %s%s%s"
+
+#: templates/administration/page/wizard.php:9
+#: templates/administration/page/wizard.php:15
+#: templates/administration/page/wizard.php:21
+#, php-format
+msgid "Access to the \"%s\" step of the wizard"
+msgstr "Accès à l’étape « %s » de l’assistant"
+
+#: templates/administration/page/wizard.php:9
+#: templates/administration/page/wizard.php:11
+msgid "Connect with Affilizz"
+msgstr "Connexion avec Affilizz"
+
+#: templates/administration/page/wizard.php:15
+#: templates/administration/page/wizard.php:17
+msgid "Link an organization"
+msgstr "Lier une organisation"
+
+#: templates/administration/page/wizard.php:21
+#: templates/administration/page/wizard.php:23
+msgid "This is it!"
+msgstr "C’est terminé !"
+
+#: templates/administration/page/wizard.php:34
+#: templates/administration/page/wizard.php:35
+msgid "Skip this wizard"
+msgstr "Ignorer cet assistant"
+
+#: templates/administration/page/wizard/connect.php:5
+msgid "Welcome to Affilizz"
+msgstr "Bienvenue chez Affilizz"
+
+#: templates/administration/page/wizard/connect.php:13
+msgid ""
+"You are just a few clicks away from connecting your WordPress installation "
+"with Affilizz"
+msgstr ""
+"Vous n’êtes qu’à quelques clics de connecter votre installation WordPress "
+"avec Affilizz"
+
+#: templates/administration/page/wizard/connect.php:14
+msgid ""
+"Our plugin grants you the ability to easily add your affiliate content in "
+"your pages."
+msgstr ""
+"Notre plugin vous donne la possibilité d’ajouter facilement votre contenu "
+"d’affiliation dans vos pages."
+
+#: templates/administration/page/wizard/connect.php:18
+msgid ""
+"Fill in your Affilizz API key to link your WordPress installation to the "
+"Affilizz dashboard."
+msgstr ""
+"Remplissez votre clé API Affilizz pour lier votre installation WordPress au "
+"tableau de bord Affilizz."
+
+#: templates/administration/page/wizard/connect.php:27
+msgid "Did you find your API key?"
+msgstr "Avez-vous trouvé votre clé API ?"
+
+#: templates/administration/page/wizard/connect.php:28
+msgid "Enter your API Key here"
+msgstr "Entrez votre clé API ici"
+
+#: templates/administration/page/wizard/connect.php:36
+#: templates/administration/page/wizard/select.php:65
+msgid "Icon of a white right arrow"
+msgstr "Icône d’une flèche droite blanche"
+
+#: templates/administration/page/wizard/select.php:5
+msgid "Set the connection between us"
+msgstr "Définir la connexion entre nous"
+
+#: templates/administration/page/wizard/select.php:9
+msgid "Pictogram of the medias in Affilizz"
+msgstr "Pictogramme des médias dans Affilizz"
+
+#: templates/administration/page/wizard/select.php:13
+msgid ""
+"Link your organization, media and channel with your WordPress installation."
+msgstr ""
+"Liez votre organisation, vos médias et votre canal à votre installation "
+"WordPress."
+
+#: templates/administration/page/wizard/select.php:14
+msgid ""
+"A link will be established so you will able to see any affiliate content you "
+"have created with Affilizz in your WordPress Affilizz plugin."
+msgstr ""
+"Un lien sera établi afin que vous puissiez voir tout contenu d’affiliation "
+"que vous avez créé avec Affilizz dans votre plugin WordPress Affilizz."
+
+#: templates/administration/page/wizard/select.php:15
+#, php-format
+msgid ""
+"%1$sWarning%2$s : Please note you will not be able to change this later "
+"unless if you desinstall and reinstall this plugin."
+msgstr ""
+"%1$sAttention%2$s : Veuillez noter que vous ne pourrez pas modifier cela "
+"ultérieurement, sauf si vous désinstallez et réinstallez ce plugin."
+
+#: templates/administration/page/wizard/select.php:19
+msgid "Select your organization, media and channel"
+msgstr "Sélectionnez votre organisation, votre média et votre canal"
+
+#: templates/administration/page/wizard/select.php:23
+msgid "Organization"
+msgstr "Organisation"
+
+#: templates/administration/page/wizard/select.php:27
+msgid "Select your organization"
+msgstr "Sélectionnez votre organisation"
+
+#: templates/administration/page/wizard/select.php:38
+msgid "Select your media"
+msgstr "Sélectionnez votre média"
+
+#: templates/administration/page/wizard/select.php:49
+msgid "Select your channel"
+msgstr "Sélectionnez votre canal"
+
+#: templates/administration/page/wizard/select.php:60
+#: templates/administration/page/wizard/success.php:23
+msgid "Icon of a blue left arrow"
+msgstr "Icône d’une flèche bleue gauche"
+
+#: templates/administration/page/wizard/select.php:61
+#: templates/administration/page/wizard/success.php:24
+msgid "Back"
+msgstr "Retour"
+
+#: templates/administration/page/wizard/success.php:6
+msgid "Illustration of a trophy"
+msgstr "Illustration d’un trophée"
+
+#: templates/administration/page/wizard/success.php:7
+msgid "Congratulations!"
+msgstr "Félicitations !"
+
+#: templates/administration/page/wizard/success.php:12
+msgid "You are all set!"
+msgstr "Vous êtes prêt !"
+
+#: templates/administration/page/wizard/success.php:13
+msgid ""
+"You can now insert any affiliate content from Affilizz into your pages. "
+"Start by :"
+msgstr ""
+"Vous pouvez maintenant insérer n’importe quel contenu d’affiliation "
+"d’Affilizz dans vos pages. Commencez par :"
+
+#: templates/administration/page/wizard/success.php:15
+msgid "If you haven't already, create affiliate content into Affilizz"
+msgstr ""
+"Si vous ne l’avez pas déjà fait, créer du contenu affilié dans Affilizz"
+
+#: templates/administration/page/wizard/success.php:16
+msgid ""
+"Insert your affiliate content into your pages using the “insert affiliate "
+"content” button."
+msgstr ""
+"Insérez votre contenu affilié dans vos pages à l’aide du bouton « Insérer du "
+"contenu affilié »."
+
+#: templates/administration/page/wizard/success.php:27
+msgid "Finish and back to your dashboard"
+msgstr "Terminer et revenir à votre tableau de bord"
+
+#. Author of the plugin/theme
+msgid "Affilizz, Dewizz SAS <wordpress@affilizz.com>"
+msgstr "Affilizz, Dewizz SAS <wordpress@affilizz.com>"
+
+#. Author URI of the plugin/theme
+msgid "https://www.affilizz.com"
+msgstr "https://www.affilizz.com"
+
+#~ msgid "Rendering"
+#~ msgstr "Affichage"
+
+#~ msgid "Optimize embed displays"
+#~ msgstr "Optimiser les affichages intégrés"
+
+#~ msgid "Technical"
+#~ msgstr "Technique"
+
+#~ msgid "Tasks and maintenance"
+#~ msgstr "Tâches et maintenance"
+
+#~ msgid "Choose how to render your affiliate content"
+#~ msgstr "Choisissez comment afficher votre contenu d’affiliation"
+
+#~ msgid "Technical tools"
+#~ msgstr "Outils techniques"
+
+#~ msgid "Apply technical and maintenance tasks"
+#~ msgstr "Appliquer des tâches techniques et de maintenance"
+
+#~ msgid "Unique proxy ID"
+#~ msgstr "ID unique pour le proxy"
+
+#~ msgid "Warning"
+#~ msgstr "Attention"
+
+#~ msgid "Coming soon"
+#~ msgstr "Prochainement"
+
+#~ msgid ""
+#~ "You will be able to setup the way Affilizz renders your affiliate content "
+#~ "in WordPress."
+#~ msgstr ""
+#~ "Vous pourrez configurer la façon dont Affilizz rend votre contenu "
+#~ "d’affiliation dans WordPress."
+
+#~ msgid "Box"
+#~ msgstr "Boîte"
+
+#~ msgid "Affilizz: Affiliation, reinvented."
+#~ msgstr "Affilizz : L’affiliation, réinventée."
+
+#~ msgid "Affilizz : Affiliation, reinvented."
+#~ msgstr "Affilizz : L’affiliation, réinventée."
+
+#, fuzzy
+#~ msgid ""
+#~ "Affilizz allows you to manage all your memberships in one place "
+#~ "regardless of your activity."
+#~ msgstr ""
+#~ "Affilizz vous permet de gérer toutes vos adhésions en un seul endroit "
+#~ "quelle que soit votre activité."
