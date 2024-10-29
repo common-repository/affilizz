@@ -1,0 +1,20 @@
+{
+	"name": "affilizz-block",
+	"version": "0.1.0",
+	"description": "Gutenberg editor block.",
+	"author": "Affilizz / Romain Carlier",
+	"license": "Commercial",
+	"main": "../../../dist/blocks/publication/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php --webpack-src-dir=. --output-path=../../../dist/blocks/publication/",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start --webpack-copy-php"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.2.0"
+	}
+}

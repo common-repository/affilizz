@@ -1,0 +1,13 @@
+{
+  "name": "affilizz/publication",
+  "version": "1.0",
+  "textdomain": "affilizz",
+  "category": "media",
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2
+}

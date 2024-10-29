@@ -1,0 +1,191 @@
+.affilizz-block{
+    &__accordion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            'content'
+            'button'
+        ;
+
+        position: relative;
+
+        &__content{
+
+            display: flex;
+            flex-wrap: wrap;
+
+            // padding-top: rem(26);
+
+            & > * { 
+                flex: 0 0 100%;
+            }
+        }
+
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(4);
+        }
+
+        &__item{
+            margin: 0;
+            flex: 0 0 100%;
+
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "brand price"
+                "link button"
+            ;
+            gap: rem(4) rem(16);
+            padding: rem(8);
+            padding-block-end: rem(4);
+            border-radius: var(--radius);
+            background: var(--background-color--bright);
+        }
+
+        &__brand{
+            grid-area: brand;   
+            display: flex;
+
+            p{
+                display: flex;
+                align-items: center;
+                gap: rem(4);
+                font-size: rem(13);
+                margin: 0;
+            }
+
+            img{
+                width: rem(20);
+            }
+
+            .affilizz-block__tag__list{
+                padding-inline-start: rem(8);
+                border-left: rem(1) solid var(--stroke-color);
+                margin-inline-start: rem(8);
+            }
+        }
+
+        &__price{
+            grid-area: price;
+            display: flex;
+            align-items: center;
+            gap: rem(4);
+
+            font-size: rem(13);
+            font-weight: 500;
+
+            p{
+                margin: 0;
+            }
+
+            .affilizz-block__tag__list{
+                order: -1;
+            }
+        }
+
+        &__link{
+            grid-area: link;
+            padding-block: rem(4);
+            margin: 0;
+            // align-self: center;
+
+            outline: 0 !important;
+
+            font-size: rem(11);
+            line-height: rem(16);
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+
+        &__create{
+            @extend
+                .affilizz-block__button,
+                .affilizz-block__button--outline,
+                .affilizz-block__button--sm,
+            ;
+            grid-area: button;
+            align-self: center;
+            margin-inline-start: auto;
+            margin-block-start: 0 !important;
+            margin-block-end: rem(4) !important;
+        }
+
+        &__button{
+            @extend 
+                .affilizz-block__button,
+                .affilizz-block__button--icon,
+                .affilizz-block__button--inline
+                ;
+            grid-area: button;
+            justify-self: center !important;
+            font-weight: 400;
+
+            &::before{
+                content: attr(data-collapse);
+            }
+
+            &::after{
+                grid-area: icon;
+                content: "";
+                width: rem(8);
+                height: rem(8);
+                border: rem(2) solid currentColor;
+                border-bottom: 0;
+                border-left: 0;
+
+                transform: translate(0,25%) rotate(-45deg);
+
+                transition: var(--transition);
+            }
+        }
+
+    }
+}
+
+.js-accordion{
+    
+    .affilizz-block__accordion__content{
+        overflow: hidden;
+        opacity: 0;
+        transition: var(--transition);
+    }
+
+    &.expand{
+        // height: var(--accordion-height-open);
+
+        // .accordion__button .icon{
+        //     transform: scale(2,-2);
+        // }
+
+        .affilizz-block__accordion__content{
+            height: var(--accordion-height-open);
+            opacity: 1;
+        }
+
+        .affilizz-block__accordion__button::after{
+            transform: translate(0,25%) rotate(-45deg);
+        }
+
+        .affilizz-block__accordion__button::before{
+            content: attr( data-open );
+        }
+    }
+
+    &:not(.expand){
+
+        .affilizz-block__accordion__button::after{
+            transform: translate(0,-25%) rotate(-45deg) scale(-1,-1);
+        }
+
+        .affilizz-block__accordion__content{
+            height: var(--accordion-height-close,auto);
+        }
+    }
+}

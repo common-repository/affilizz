@@ -1,0 +1,46 @@
+%title {
+    margin: 0;
+
+    font-family: var(--title-font);
+    font-weight: 500;
+    line-height: 1.25em;
+
+    color: var(--title-color);
+    
+    mark {
+        font-weight: 500;
+        color: var(--title-color--accent);
+    }
+}
+
+.title {
+    @extend %title;
+
+    &--md{
+        font-size: rem(24);
+    }
+
+    &--sm{
+        font-size: rem(16);
+    }
+
+    &--xs{
+        font-size: rem(14);
+    }
+
+    &--xxs{
+        font-size: rem(12);
+    }
+
+    &--thin{
+        font-weight: 400;
+    }
+
+    &--light{
+        color: var(--title-color--light);
+    }
+
+    &--centered{
+        text-align: center;
+    }
+}

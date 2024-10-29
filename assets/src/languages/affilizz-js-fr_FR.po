@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-01-25 23:24+0100\n"
+"PO-Revision-Date: 2023-01-25 23:26+0100\n"
+"Last-Translator: Romain Carlier <romain@reaklab.com>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: js\n"
+"X-Poedit-SearchPath-1: blocks\n"
+
+#: blocks/publication/edit.js:38
+msgid "Unable to get the preview of the publication"
+msgstr "Impossible d’obtenir l’aperçu de la publication"
+
+#: blocks/publication/edit.js:72
+msgid "There is an error with Affilizz API: "
+msgstr "Il y a une erreur avec l’API Affilizz : "
+
+#: blocks/publication/edit.js:85
+msgid "Rendering in progress…"
+msgstr "Rendu en cours..."
+
+#: blocks/publication/edit.js:95
+msgid ""
+"To select or update the publication contents displayed here, please open the "
+"configuration pane below."
+msgstr ""
+"Pour sélectionner ou mettre à jour le contenu de la publication affiché ici, "
+"ouvrez le volet de configuration ci-dessous."
+
+#: blocks/publication/edit.js:96 blocks/publication/editor.js:16
+msgid "Affilizz affiliate content"
+msgstr "Contenu affilié Affilizz"
+
+#: blocks/publication/edit.js:99
+msgid "Edit content"
+msgstr "Modifier le contenu"
+
+#: blocks/publication/edit.js:100
+msgid "Add content"
+msgstr "Ajouter du contenu"
+
+#: blocks/publication/editor.js:17
+msgid "Insert affiliate content from your Affilizz account"
+msgstr "Insérer du contenu affilié à partir de votre compte Affilizz"
+
+#: blocks/publication/editor.js:19
+msgid "affiliate"
+msgstr "affilié"
+
+#: blocks/publication/editor.js:20
+msgid "affiliated"
+msgstr "affilié"
+
+#: blocks/publication/editor.js:21
+msgid "publication"
+msgstr "publication"
+
+#: js/wizard.js:62
+msgid "Loading..."
+msgstr "Chargement..."

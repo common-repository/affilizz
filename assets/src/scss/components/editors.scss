@@ -1,0 +1,217 @@
+@keyframes quarter-rotation {
+    0% { transform: rotate(0deg); }
+    25% {  transform: rotate(90deg); }
+    50% {  transform: rotate(180deg); }
+    75% {  transform: rotate(270deg); }
+    100% {  transform: rotate(359deg); }
+}
+
+.wpview.wpview-wrap[data-wpview-type="affilizz-publication"] {
+    padding: 15px;
+    width: auto !important;
+    z-index: 100000 !important;
+}
+
+.mce-content-body *[contentEditable=false][data-mce-selected][data-wpview-type="affilizz-publication"] {
+    outline-color: transparent;
+    border: 2px solid $grey_light;
+    border-radius: 9px;
+    padding: 14px;
+
+    .affilizz-inline__indicator {
+    	background: $grey_light;
+    	border-radius: 0 0 $border-radius $border-radius;
+    }
+
+}
+
+.affilizz-missing-publication {
+    background: #dcdcde;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: -10px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue", sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: #fff;
+}
+
+.affilizz-rendered-publication {
+	padding: $gutter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed $black_light;
+    border-radius: 3px;
+
+    + .affilizz-rendered-publication {
+    	margin-top: 15px;
+    }
+}
+
+.affilizz-loader {
+    visibility: hidden;
+
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    color: $black_main;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.25em;
+    border-radius: $border-radius;
+
+    img {
+    	animation: quarter-rotation 2.5s ease infinite;
+    }
+
+    p {
+        font-size: $font_size_larger;
+    }
+}
+
+.affilizz-placeholder-wrapper {
+	background-color: $white_main;
+	padding: 16px;
+	width: auto !important; 
+
+	.affilizz-placeholder {
+		box-shadow: none;
+
+		.components-placeholder__label {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			font-family: $main_font_family;
+			font-weight: $font_weight_bold;
+
+			width: 100%;
+			gap: 16px;
+
+			svg {
+				width: 32px;
+				height: 32px;
+				margin-right: 0;
+			}
+		}
+
+		.components-placeholder__instructions {
+			@include hint-box;
+		}
+
+		.components-button {
+			width: auto !important;
+			background: $green_main;
+			font-size: $font_size_normal;
+		}
+
+		.components-placeholder__fieldset {
+			display: block;
+		}
+	}
+}
+
+.affilizz-inline, .wp-block-affilizz-publication {
+	position: relative;
+	border: 1px solid #c9c9cb;
+	border-radius: $border_radius;
+	padding: 15px 15px 0;
+	margin: 15px 0;
+	font-family: $main_font_family;
+
+	&__indicator {
+		display: inline-flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+
+		font-weight: 600;
+		color: $white_main;
+		font-size: $font_size_small;
+		font-weight: $font_weight_light;
+
+		background: #c7c7c7;
+		border-radius: $border_radius / 2;
+
+	    padding: 3px 7px 3px;
+
+	    line-height: 1;
+	    position: absolute;
+		margin-top: -30px;
+	}
+}
+
+.wp-block-affilizz-publication {
+	padding-bottom: 15px;
+	margin-top: 30px;
+	top: 15px;
+	max-width: max-content !important;
+}
+
+// Elementor-specific styles
+
+.affilizz__elementor-placeholder {
+	&__wrapper {
+		background-color: $white_main;
+		padding: 16px;
+		width: auto !important; 
+		border: 1px solid #c9c9cb;
+		border-radius: 4px;
+		font-family: "Rubik", Arial, Sans_serif;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		align-items: center;
+	}
+
+	&__label {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		font-family: $main_font_family;
+		font-weight: $font_weight_bold;
+
+		width: 100%;
+		gap: 10px;
+		font-size: 16px;
+
+		svg {
+			width: 32px;
+			height: 32px;
+			margin-right: 0;
+		}
+	}
+
+	&__instructions {
+		@include hint-box;
+	}
+
+	.affilizz-button {
+		width: auto !important;
+		background: $green_main;
+		font-size: $font_size_normal;
+	}
+
+	&__fieldset {
+		display: block;
+	}
+}
+
+.elementor-element .icon .affilizz-icon:before {
+    content: '';
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg height='30' viewbox='0 0 30 30' width='30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30H30V0H0V30ZM16.0969 20.187C16.0902 20.0288 16.1401 19.8734 16.2375 19.7496C16.2778 19.6945 16.33 19.6496 16.3902 19.6182C16.4503 19.5869 16.5168 19.57 16.5844 19.5689H22.3969L16.5656 10.5166C16.4054 10.2821 16.3203 10.0032 16.3219 9.7179V7.32171C16.3152 7.16347 16.3651 7.00811 16.4625 6.88431C16.5028 6.82922 16.555 6.78427 16.6152 6.75294C16.6753 6.72161 16.7418 6.70474 16.8094 6.70364H26.4656C26.5336 6.70241 26.6009 6.71826 26.6614 6.74978C26.722 6.7813 26.7739 6.82752 26.8125 6.88431C26.9131 7.0075 26.9693 7.16177 26.9719 7.32171V9.78446C26.9743 9.93336 26.9245 10.0783 26.8313 10.1933C26.7947 10.25 26.7446 10.2963 26.6855 10.3279C26.6265 10.3595 26.5605 10.3754 26.4938 10.374H20.8688L26.9063 19.3978C26.986 19.5148 27.055 19.6389 27.1125 19.7686C27.17 19.92 27.1956 20.082 27.1875 20.2441V22.6593C27.1926 22.8173 27.1428 22.9721 27.0469 23.0967C27.0077 23.1529 26.9556 23.1986 26.8953 23.2301C26.8349 23.2615 26.7679 23.2778 26.7 23.2773H16.5844C16.5174 23.2781 16.4512 23.263 16.391 23.2333C16.3308 23.2036 16.2783 23.1601 16.2375 23.1062C16.1866 23.0483 16.1479 22.9805 16.1237 22.9069C16.0996 22.8334 16.0904 22.7556 16.0969 22.6783V20.187ZM2.86875 20.2536C2.86069 20.0915 2.88624 19.9295 2.94375 19.7781C3.00533 19.6506 3.0742 19.5267 3.15 19.4073L9.15938 10.3835H3.53438C3.47034 10.3828 3.40735 10.3669 3.35039 10.3372C3.29344 10.3075 3.24409 10.2648 3.20625 10.2124C3.11441 10.0929 3.06488 9.94549 3.06563 9.79397V7.32171C3.06015 7.16516 3.10634 7.01123 3.19688 6.88431C3.23463 6.82885 3.28503 6.78346 3.34379 6.75201C3.40255 6.72055 3.46793 6.70396 3.53438 6.70364H13.1906C13.2598 6.70327 13.3281 6.71943 13.39 6.75082C13.4519 6.78221 13.5057 6.82794 13.5469 6.88431C13.6401 7.01035 13.6896 7.16416 13.6875 7.32171V9.7084C13.6875 9.99643 13.6026 10.2779 13.4438 10.5166L7.60313 19.5689H13.4063C13.4754 19.5686 13.5438 19.5847 13.6057 19.6161C13.6675 19.6475 13.7213 19.6932 13.7625 19.7496C13.8584 19.8742 13.9082 20.029 13.9031 20.187V22.6973C13.9084 22.8524 13.8585 23.0043 13.7625 23.1252C13.7194 23.1788 13.665 23.2219 13.6034 23.2515C13.5418 23.2811 13.4744 23.2964 13.4063 23.2964H3.35625C3.28864 23.2953 3.22219 23.2784 3.16204 23.2471C3.10188 23.2157 3.04965 23.1708 3.00938 23.1157C2.90899 22.9898 2.85881 22.8304 2.86875 22.6688V20.2536Z' fill='%23111453'%3E%3C/path%3E%3C/svg%3E");
+    height: 20px;
+	aspect-ratio: 1;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

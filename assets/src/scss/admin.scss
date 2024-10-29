@@ -1,0 +1,41 @@
+@use 'sass:math';
+@use 'sass:map';
+
+$rem-base: 16;
+
+@mixin transition( $prop: all, $duration: var(--transition-duration), $easing: var(--transition-easing) ){
+    transition: $prop $duration $easing;  
+}
+
+@function rem( $value, $base: $rem-base ){
+    @return math.div( $value, $base ) * 1rem;
+}
+
+// General, common traits of the interfaces
+@import "common/fonts";
+@import "common/colors";
+@import "common/layout";
+@import "common/helpers";
+@import "common/buttons";
+@import "common/modal";
+@import "common/forms";
+
+// Blocks used for the new interfaces
+@import "common/blocks/variable";
+@import "common/blocks/reset";
+@import "common/blocks/icon";
+@import "common/blocks/title";
+@import "common/blocks/button";
+@import "common/blocks/tag";
+@import "common/blocks/form";
+@import "common/blocks/product";
+@import "common/blocks/accordion";
+@import "common/block";
+
+// Editors
+@import "components/notices";
+@import "components/editors";
+
+// Administration pages
+@import "admin/pages/wizard";
+@import "admin/pages/settings";

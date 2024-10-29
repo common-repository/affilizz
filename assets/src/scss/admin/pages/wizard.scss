@@ -1,0 +1,322 @@
+// Disable general WordPress administration chrome
+.affilizz_page_affilizz-wizard {
+    overflow: hidden;
+    margin-top: -32px;
+    #adminmenuback,
+    #adminmenuwrap,
+    #wpadminbar,
+    #wpfooter,
+    #wpbody-content .notice {
+        display: none;
+    }
+
+    #wpcontent {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wpwrap {
+        background: $black_default conic-gradient(from 189.81deg at 60% 500px,#404489 -9.27deg,#111453 24.39deg,#111453 178.12deg,#1dd6a1 283.06deg,#404489 350.73deg,#111453 384.39deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: $gutter;
+    }
+}
+
+.affilizz-wizard-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: $font_size_normal;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        padding: $gutter;
+        justify-content: left;
+        align-items: start;
+
+        &__brand {
+            color: #fff;
+            margin: 0;
+            margin-left: $gutter / 2;
+            line-height: 40px;
+        }
+    }
+
+    .affilizz-wizard {
+        border-radius: $border_radius;
+        overflow: hidden;
+
+        &__footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            color: $white_main;
+            font-size: $font_size_large;
+            text-transform: uppercase;
+            gap: 10px;
+            font-weight: $font_weight_boldest;
+        }
+
+        &__skip {
+            a {
+                font-size: $font_size_small;
+                color: $black_medium;
+            }
+        }
+    }
+
+    .steps {
+        background: $white_main;
+
+        ol {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            list-style-type: none;
+
+            .step {
+                background: $blue_background;
+                border-bottom: 2px solid $grey_super_light;
+                
+                font-size: $font_size_normal;
+                text-align: center;
+                margin: 0;
+                
+                flex: 1 1 0px;
+                padding: 12px 0 8px;
+
+                &__number {
+                    display: block;
+                    font-weight: $font_weight_bold;
+                }
+
+                a {
+                    color: $black_light;
+                    text-decoration: none;
+                }
+
+                &--current {
+                    border-bottom-color: $green_main;
+                    background: $white_main;
+                    color: $black_main;
+
+                    a {
+                        color: $black_main;
+                    }
+                }
+            }
+        }
+
+        a[disabled] {
+            pointer-events: none;
+            text-decoration: none;
+            color: $green_dark;
+        }
+    }
+
+    .step {
+        a {
+            text-decoration: none;
+            color: $black_medium;
+        }
+
+        p {
+            font-size: $font_size_normal;
+            line-height: 1.5;
+        }
+
+        &__content {
+            display: none;
+
+            background: $white_main;
+            padding: 40px 80px;
+            font-family: $main_font_family;
+            border-radius: 0 0 $border_radius $border_radius;
+
+            h2 {
+                font-size: $font_size_largest;
+                color: $black_main;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            h3 {
+                color: $black_main;
+                line-height: 24px;
+                font-size: $font_size_large;
+            }
+
+            a {
+                font-size: $font_size_normal;
+                color: $black_medium;
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+
+                img {
+                    margin-right: 0;
+                }
+            }
+
+            label {
+                font-weight: 400;
+                font-size: $font_size_smaller;
+            }
+
+            select {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+                background-size: 11px;
+                background-position: calc(100% - 20px) center;
+                background-repeat: no-repeat;
+            }
+
+            input, select {
+                box-sizing: border-box;
+                padding: 8px 12px;
+                width: 100%;
+                max-width: 100%;
+
+                background-color: $white_main;
+                border: 1px solid $grey_light;
+                border-radius: 4px;
+
+                align-self: stretch;
+                flex-grow: 0;
+
+                @include placeholder {
+                    color: $grey_light;
+                    font-size: $font_size_normal;
+                }
+
+                &:disabled {
+                    background: $grey_background;
+                    color: $grey_light;
+                    border: 1px solid $grey_super_light;
+                }
+
+                &:focus {
+                    border: 1px solid #404489;
+                    box-shadow: 0px 0px 0px 2px rgba(29, 214, 161, 0.5);
+                    border-radius: 4px;
+                }
+            }
+
+            &__button {
+                @include default-call-link;
+                float: right;
+                color: #fff !important;
+            }
+        }
+
+        &__illustration {
+            text-align: center;
+
+            h2 {
+                margin-top: 12px;
+            }
+        }
+
+        &--current {
+            &__content {
+                display: block;
+            }
+        }
+
+        &__help {
+            @include dashed-box;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: $gutter;
+            margin-bottom: $gutter;
+
+            &__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                max-width: 100px;
+            }
+
+            &__content {
+                h3 {
+                    margin-top: 0;
+                    font-size: $font_size_medium;
+                    line-height: 24px;
+                    color: $black_main;
+                }
+
+                ol {
+                    list-style-type: none;
+                    margin: 0;
+
+                    li {
+                        counter-increment: step-counter;
+                        padding-left: 15px;
+                        position: relative;
+                        margin-bottom: 10px;
+
+                        &::before {
+                            content: counter(step-counter);
+                            margin-right: 10px;
+                            color: $green_main;
+                            position: absolute;
+                            left: 0;
+                        }
+                        &::marker {
+                            color: $green_main;
+                        }
+                    }
+                }
+
+                p:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &__actions {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            &--mono-link {
+                justify-content: flex-end;
+            }
+
+            .step__button {
+                display: inline-flex;
+                align-items: center;
+                gap: 14px;
+                padding: 10px 12px;
+            }
+        }
+    }
+
+    .ajax_error {
+        width: 100%;
+        text-align: left;
+        margin: 10px;
+        color: darkred;
+    }
+
+    .skip {
+        text-align: center;
+
+        a {
+            color: $black_medium;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@mixin optional-at-root( $selector ) {
+    @at-root #{if( not &, $selector, selector-append(&, $selector ) ) } {
+        @content;
+    }
+}
+
+@mixin placeholder {
+    @include optional-at-root( '::-webkit-input-placeholder' ) { @content; }
+    @include optional-at-root( ':-moz-placeholder' ) { @content; }
+    @include optional-at-root( '::-moz-placeholder' ) { @content; }
+    @include optional-at-root( ':-ms-input-placeholder' ) { @content; }
+}
+
+
+@mixin light-shadow {
+    box-shadow: 0px 4px 4px rgba(17, 20, 83, 0.4);
+}
+
+@mixin strong-shadow {
+    box-shadow: 0px 4px 4px rgba(17, 20, 83, 0.2);
+}
+
+@mixin light-outer-glow {
+    box-shadow: 0px 0px 4px rgba(17, 20, 83, 0.2);
+}
+
+@mixin strong-outer-glow {
+    box-shadow: 0px 0px 4px rgba(17, 20, 83, 0.4);
+}
+
+@mixin hint-box {
+    background: $blue_background;
+    color: $black_light;
+    padding: 8px 14px;
+    font-size: $font_size_normal;
+    border-radius: $border_radius;
+
+    a {
+        color: $black_main;
+    }
+}
+
+@mixin dashed-box {
+    box-sizing: border-box;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%231DD6A1FF' stroke-width='4' stroke-dasharray='4%2c 4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+    border-radius: $border_radius;
+    padding: 1.5 * $gutter;
+}
+
+@mixin default-call-link {
+    background: #111453;
+    border-radius: $border_radius;
+    padding: 10px 18px;
+    position: relative;
+    font-size: $font_size_normal;
+
+    &:after {
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%228%22%20height%3D%2212%22%20viewBox%3D%220%200%208%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.99999%2012C0.796413%2011.998%200.598292%2011.9339%200.432119%2011.8163C0.265946%2011.6987%200.139633%2011.5331%200.0700584%2011.3418C0.000483952%2011.1505%20-0.00903286%2010.9425%200.0427756%2010.7456C0.0945842%2010.5487%200.205239%2010.3723%200.359975%2010.24L5.43999%206.00002L0.359975%201.77002C0.248536%201.68968%200.154862%201.58723%200.0847678%201.46908C0.0146733%201.35092%20-0.0303424%201.21959%20-0.0474343%201.08327C-0.0645262%200.946958%20-0.0532897%200.808583%20-0.0145364%200.676779C0.024217%200.544976%200.0896931%200.422571%200.177846%200.3172C0.266%200.211829%200.374901%200.125753%200.497793%200.0643394C0.620685%200.00292631%200.754949%20-0.032506%200.892141%20-0.0397475C1.02933%20-0.0469889%201.16654%20-0.0258842%201.29522%200.0222504C1.42389%200.070385%201.54125%200.144517%201.64%200.240022L7.64%205.24002C7.7515%205.33389%207.84115%205.451%207.90264%205.58314C7.96413%205.71528%207.99596%205.85927%207.99596%206.00502C7.99596%206.15077%207.96413%206.29476%207.90264%206.4269C7.84115%206.55905%207.7515%206.67615%207.64%206.77002L1.64%2011.77C1.46009%2011.9191%201.23364%2012.0005%200.99999%2012Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 12px;
+        position: relative;
+        margin-left: 12px;
+    }
+}

@@ -1,0 +1,447 @@
+.affilizz-admin-page-wrap {
+	font-family: $main_font_family;
+    display: flex;
+    min-height: 60vh;
+    margin-top: 0;
+}
+.affilizz-plugin {
+	font-family: $main_font_family;
+	display: flex;
+	flex-direction: row;
+	border-radius: $border_radius;
+	overflow: hidden;
+	width: 100%;
+
+	&__sidebar {
+		flex: 0 0 300px;
+	}
+
+	&__body {
+		background: $white_main;
+		padding: 40px;
+		flex-grow: 1;
+
+		.description {
+			font-size: 14px;
+			color: $black_light;
+		}
+
+		ul.description {
+			margin-left: $gutter;
+			li {
+				list-style-type: disc;
+			}
+		}
+	}
+}
+
+.affilizz-plugin-menu {
+	font-family: $main_font_family;
+
+	&__header {
+		display: grid;
+		grid-template-columns: 44px 1fr;
+		grid-template-rows: repeat(2, 50%);
+		grid-template-areas:
+			"a b"
+			"a c";
+		align-content: space-between;
+		justify-content: space-around;
+		padding: 15px 0;
+		margin-bottom: $gutter;
+		margin-top: $gutter;
+
+		&__icon {
+			grid-area: a;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			img {
+				width: 36px;
+			}
+		}
+
+		&__title {
+			grid-area: b;
+			font-weight: $font_weight_boldest;
+			text-transform: uppercase;
+			color: $black_light;
+			font-size: $font_size_smaller;
+		}
+
+		&__description {
+			grid-area: c;
+			color: $black_main;
+		}
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns: 1fr 24px;
+		grid-template-rows: repeat(2, 50%);
+		grid-template-areas:
+			"b a"
+			"c a";
+		align-content: space-between;
+		justify-content: space-around;
+		padding: 15px;
+
+		text-decoration: none;
+		color: $black_light;
+
+		&--active {
+			background: $white_main;
+			border-left: 2px solid $green_main;
+			color: $black_main;
+
+			&__description {
+				color: $green_main;
+			}
+
+			.affilizz-plugin-menu__item__icon {
+				img {
+					@include black-to-green-svg;
+				}
+			}
+		}
+
+		&:active, &:hover, &:focus {
+			color: $black_main;
+			outline: none;
+			box-shadow: none;
+		}
+
+		&__icon {
+			grid-area: a;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			img {
+				width: 65%;
+			}
+		}
+
+		&__title {
+			grid-area: b;
+			font-weight: $font_weight_boldest;
+		}
+
+		&__description {
+			grid-area: c;
+			color: $black_light;
+		}
+	}
+}
+
+.affilizz-plugin__pane {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-family: $main_font_family;
+	font-size: $font_size_normal;
+
+	.affilizz-field-wrapper {
+		&--api-key {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			gap: 0 20px;
+
+			.affilizz-field {
+				flex: 0 1 40%;
+
+				&-main {
+					margin-bottom: 0.25rem !important;
+				}
+
+				input {
+					max-width: 100% !important;
+					width: 100%;
+					color: $black_light;
+				}
+			}
+			> a {
+				flex: 1;
+				margin-bottom: 18px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 10px;
+				color: $black_medium;
+				text-decoration: underline;
+			}
+
+			.description {
+				flex-basis: 100%;
+				color: $black_light;
+				font-style: italic;
+				font-size: 12px;
+			}
+		}
+	}
+
+	&--danger {
+		.affilizz-plugin__pane__inner {
+			background: $red_error_background;
+			padding: 40px;
+			border-radius: 5px;
+			margin-top: 5px;
+			color: $red_error;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.affilizz-field__label, label {
+			color: $red_error !important;
+			line-height: 1.5;
+
+			strong {
+				font-weight: 500 !important;
+			}
+		}
+
+		hr {
+			border-top: 1px solid #e41f5a;
+			border-bottom: none;
+			margin: $gutter 0;
+		}
+
+		input[type=checkbox]:checked {
+			background: #e41f5a !important;
+			box-shadow: 0 0 0 1px #b91b4a !important;
+		}
+
+		select:focus, input[type=text]:focus, .ts-wrapper.single .ts-control:focus, .ts-wrapper.multi .ts-control:focus, .affilizz-faux-select:focus {
+			box-shadow: 0px 0px 0px 2px rgba(214, 54, 56, 0.5) !important;
+		}
+
+		.affilizz-plugin__pane__section__title {
+			color: #e41f5a;
+		}
+	}
+
+	&__button {
+		&--submit {
+			font-size: $font_size_normal;
+		}
+	}
+
+	&__header {
+		display: flex;
+		padding: 0 0 15px 0;
+		border-bottom: 1px solid gray;
+		margin-bottom: 15px;
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			gap: 5px;
+			font-weight: font_weight_light;
+			color: $black_light;
+
+			h3 {
+				font-size: $font_size_largest;
+				font-weight: $font_weight_normal;
+				color: $black_main;
+			}
+
+			p {
+				font-size: $font_size_normal;
+			}
+
+			* {
+				margin: 0;
+				flex: 1;
+			}
+		}
+
+		&__icon {
+			width: 48px;
+			img {
+				@include black-to-green-svg;
+				width: 26px;
+			}
+		}
+
+		p.submit {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__section__title {
+		color: $black_main;
+		font-weight: $font_weight_normal;
+		margin: $gutter 0;
+
+		span {
+			background: #fff;
+			padding: 5px $gutter 0 0;
+		}
+
+		&:after {
+			content: ' ';
+			background: $grey_super_light;
+			width: 100%;
+			display: block;
+			height: 1px;
+			margin-top: -10px;
+		}
+	}
+
+	.affilizz-form {
+		.affilizz-field.radio, .affilizz-field.checkbox {
+			label {
+				color: $black_medium;
+				display: flex;
+				align-items: center;
+				gap: $gutter / 3;
+
+				small {
+					display: block;
+					font-size: $font_size_small;
+					color: $black_light;
+					font-style: italic;
+				}
+			}
+		}
+
+		.affilizz-field.radio {
+			input[type="radio"] {
+				border: none;
+				-webkit-appearance: none;
+				appearance: none;
+				box-shadow: 0 0 0 1px $grey_light;
+
+				&:before {
+					content: "";
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					transform: scale(0);
+					transition: 120ms transform ease-in-out;
+					box-shadow: inset 1em 1em #fff;
+					margin: 5px 0 0 5px;
+				}
+
+				&:hover {
+					box-shadow: 0 0 0 1px $black_medium;
+				}
+
+				&:checked {
+					box-shadow: 0 0 0 1px $green_main;
+					&:hover {
+						box-shadow: 0 0 0 1px $green_main;
+					}
+					&:before {
+						transform: scale(1);
+					}
+
+					background: $green_main;
+				}
+			}
+		}
+
+		.affilizz-field.checkbox {
+			input[type="checkbox"] {
+				border: none;
+				-webkit-appearance: none;
+				appearance: none;
+				box-shadow: 0 0 0 1px $grey_light;
+
+				&:before {
+					content: url('data:image/svg+xml; utf8, <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.94403 7.08803L0.288025 4.88003C0.124652 4.74424 0.0219124 4.54911 0.00240865 4.33757C-0.0170951 4.12602 0.0482342 3.9154 0.184025 3.75203C0.319816 3.58865 0.514945 3.48591 0.726486 3.46641C0.938027 3.44691 1.14865 3.51224 1.31203 3.64803L2.83203 4.91203L6.63203 1.04003C6.78585 0.888323 6.99364 0.803939 7.20968 0.80544C7.42572 0.80694 7.63232 0.894201 7.78403 1.04803C7.93573 1.20185 8.02011 1.40964 8.01861 1.62568C8.01711 1.84173 7.92985 2.04832 7.77603 2.20003L2.94403 7.08803Z" fill="white"/></svg>');
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					transform: scale(0);
+					transition: 120ms transform ease-in-out;
+					margin: 4px 0 0 4px;
+				}
+
+				&:hover {
+					box-shadow: 0 0 0 1px $black_medium;
+				}
+
+				&:checked {
+					box-shadow: 0 0 0 1px $green_main;
+					&:hover {
+						box-shadow: 0 0 0 1px $green_main;
+					}
+					&:before {
+						transform: scale(1);
+					}
+
+					background: $green_main;
+				}
+			}
+
+			p.description {
+				font-style: italic;
+				margin-bottom: rem(12);
+			}
+		}
+
+		.affilizz-field-main {
+			margin-bottom: $gutter / 2;
+		}
+
+		fieldset {
+			background: $blue_background;
+			padding: 20px;
+			border: 1px solid $grey_super_light;
+			border-radius: $border_radius;
+			margin-top: 50px;
+
+			p {
+				color: $black_main;
+				font-style: italic;
+				font-size: 14px;
+
+				a {
+					color: $green_main;
+					text-decoration: underline;
+				}
+			}
+
+			> p {
+				margin-bottom: 0;
+			}
+
+			p.description {
+				padding: 5px 0 10px;
+				color: $black_light;
+				font-size: 14px;
+				font-style: italic;
+
+				span {
+					color: $black_light;
+				}
+			}
+		}
+
+		legend {
+			position: absolute;
+			color: $black_light;
+			margin: -50px 0 0 -25px;
+			padding-left: 3px;
+		}
+
+		label {
+			margin-bottom: 5px;
+			color: $black_light;
+			display: block;
+		}
+
+		input[type="text"] {
+			max-width: 50%;
+			border-color: $grey_super_light;
+			display: block;
+		}
+	}
+}

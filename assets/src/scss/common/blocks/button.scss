@@ -1,0 +1,102 @@
+.affilizz-block__button{
+    --button-height: #{ rem(44) };
+    --button-background: var(--blue-800);
+    --button-color: var(--text-color--invert);
+    --button-stroke: var(--stroke-color--dark);
+
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "text"
+    ;
+    gap: rem(8);
+    min-height: var(--button-height);
+    align-items: center;
+    padding: 0 rem(24);
+    
+    cursor: pointer !important;
+    border-radius: var(--radius);
+    user-select: none;
+    
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: var(--button-height);
+    color: var(--button-color);
+    text-align: center;
+
+    background: var(--button-background);
+
+    transition: var(--transition);
+
+    &:hover{
+        // --button-color: var(--text-color--accent);
+
+        &:not(.affilizz-block__button--inline,.affilizz-block__button--outline, .affilizz-block__button--disable){
+            --button-background: var(--background-color--accent);
+        }
+    }
+
+    .affilizz-icon, &::after{
+        grid-area: icon;
+        font-size: rem(20);
+        color: var(--button-color);
+    }
+
+    &--sm{
+        font-size: rem(13);
+    }
+
+    &--outline{
+        --button-height: #{ rem(24) };
+        --button-background: var(--background-color);
+        --button-color: var(--text-color);
+        padding: 0 rem(8);
+        border: rem(2) solid var(--button-stroke);
+
+        &:hover{
+            --button-color: var(--text-color--accent);
+            --button-stroke: var(--stroke-color--accent);
+        }
+    }
+
+    &--disable{
+        --button-background: var(--background-grey--lighter);
+        --button-color: var(--text-color--lighter);
+        cursor: auto !important;
+    }
+
+    &--icon{
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "text icon"
+        ;
+    }
+
+    &--invert{
+        grid-template-areas:
+            "icon text"   
+        ;
+    }
+
+    &--inline{
+        --button-color: var(--text-color);
+        padding: 0;
+        font-size: rem(12);
+
+        background: transparent;
+
+        &:hover{
+            --button-color: var(--text-color--accent);
+        }
+    }
+
+    &--offset{
+        margin-top: rem(-12);
+    }
+
+    &--auto{
+        width: 100%;
+    }
+}

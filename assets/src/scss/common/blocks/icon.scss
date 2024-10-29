@@ -1,0 +1,59 @@
+.affilizz-icon {
+    display: flex;
+    aspect-ratio: 1/1;
+    width: rem(20);
+    box-sizing: content-box;
+    /* use !important to prevent issues with browser extensions that change fonts */
+   
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    pointer-events: none;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    transition: var(--transition);
+
+    &:before{
+        align-self: center;
+        margin: 0 auto;
+    }
+}
+
+.affilizz-icon--add:before {
+    content: "\e908";
+}
+.affilizz-icon--remove:before {
+    content: "\e909";
+}
+.affilizz-icon--pros:before {
+    content: "\e906";
+}
+.affilizz-icon--cons:before {
+    content: "\e907";
+}
+.affilizz-icon--table:before {
+    content: "\e900";
+}
+.affilizz-icon--button:before {
+    content: "\e901";
+}
+.affilizz-icon--card:before {
+    content: "\e902";
+}
+.affilizz-icon--link:before {
+    content: "\e903";
+}
+.affilizz-icon--search:before {
+    content: "\e904";
+}
+.affilizz-icon--arrow-left:before {
+    content: "\e905";
+}

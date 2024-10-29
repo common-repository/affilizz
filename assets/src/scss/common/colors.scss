@@ -1,0 +1,48 @@
+// Whites
+$white_main: #fff;
+
+// Blacks
+$black_default: #0b0d30;
+$black_main: #111453;
+$black_medium: #404489;
+$black_light: #7a7db0;
+
+// Greys
+$grey_light: #a9b1c8;
+$grey_super_light: #d9deeb;
+$grey_background: #f0f3fa;
+
+// Blues
+$blue_dark: #0f19c1;
+$blue_main: #1925f7;
+$blue_medium: #737af9;
+$blue_light: #cdcffe;
+$blue_super_light: #e9eaff;
+$blue_background: #f8f8ff;
+
+// Greens
+$green_dark: #04b180;
+$green_main: #1dd6a1;
+$green_medium: #7af4d1;
+$green_light: #7af4d1;
+$green_super_light: #c5ffee;
+
+// Reds
+$red_error: #e41f5a;
+$red_error_dark: #b91b4a;
+$red_error_background: #fff2f6;
+
+// Oranges
+$orange_warning: #ffc178;
+
+// Named colors
+$content_type_cta: #fdf6a1;
+$content_type_link: #ccf7fa;
+$content_type_box: #fbdfde;
+$content_type_card: #cfc7ff;
+$content_type_carousel: #bfffbe;
+$message_error: #e41f5a;
+
+@mixin black-to-green-svg {
+	filter: invert(64%) sepia(58%) saturate(585%) hue-rotate(111deg) brightness(97%) contrast(87%);
+}

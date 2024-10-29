@@ -1,0 +1,28 @@
+.affilizz-block{
+
+    &__tag{
+        padding: rem(2) rem(4);
+        margin: 0;
+
+        font-size: rem(11);
+        line-height: 1em;
+        font-weight: 500;
+
+        background: var(--tag--default);
+        border-radius: var(--radius--xs);
+        color: var(--text-color--invert);
+
+        @each $name, $tag in $tags{
+            &--#{ $name }{               
+                background: var( --tag--#{ $name } ); 
+                color: var(--text-color);
+            }
+        }
+        
+        &__list{
+            display: flex;
+            gap: rem(4);
+            align-self: center;
+        }
+    }
+}

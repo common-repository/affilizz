@@ -1,0 +1,145 @@
+$colors: (
+    'white':              #ffffff,
+    'black':              #000000,    
+
+    'blue-0':             #F8F8FF,
+    'blue-50':            #E9EAFF,
+    'blue-100':           #D9DEEB,
+    'blue-150':           #CDCFFE,
+    'blue-300':           #A9B1C8,
+    'blue-400':           #7A7DB0,
+    'blue-600':           #404489,
+    'blue-800':           #111453,
+
+    'grey-50':            #F0F3FA,
+
+    'accent-blue-300':    #737AF9,
+
+    'yellow-50':          #FFFAF5,
+    
+    'orange-50':          #FFF3E4,
+    
+    'red-50':             #FFF2F6,
+    'red-500':            #E41F5A,
+
+    'green-100':          #C5FFEE,
+    'green-200':          #A3E8D2,
+    'green-300':          #7AF4D1,
+    'green-500':          #1DD6A1,
+);
+
+$tags: (
+    'default':   #7A7DB0,
+    'pink':      #FEC8FF,
+    'purple':    #CFB8FF,
+);
+
+$radiuses: (
+    'radius--xs': #{ rem(2) },
+    'radius': #{ rem(4) },
+    'radius--sm': #{ rem(6) },
+    'radius--md': #{ rem(8) },
+    'radius--lg': #{ rem(12) },
+);
+
+//// ---- FONTS
+$title-font: "Rubik", sans-serif;
+$text-font: "Rubik", sans-serif;
+$font-size-main: rem(16);
+$line-height: 1.25;
+
+//// ---- LAYOUT 
+$grid-columns: 12;
+$grid-margin: rem(12);
+$grid-margin-max: rem(60);
+$grid-gap: rem(12);
+$grid-space: $grid-margin + $grid-gap;
+
+// $radius--lg: rem(12);
+// $radius--md: rem(8);
+// $radius: rem(4);
+
+// $header-offset-v: 3.6rem;
+$header-height: rem(100);
+
+$max-width: rem(1440);
+
+//// ---- EASING
+// $transition-easing: cubic-bezier(.44,0,.28,1.02);
+// $transition-easing: cubic-bezier(.6,0,.4,1);
+// $transition-easing: cubic-bezier(.55,0,.25,1);
+$transition-easing: cubic-bezier(.45,0,.15,1);
+$transition-easing--in-out: cubic-bezier(.4,0,.1,1);
+$transition-duration: .32s;
+
+//// ---- STYLES
+$drop-shadow: 0 rem(4) rem(4) rgba( map.get( $colors, 'blue-800'),.2);
+
+.affilizz-block{
+
+    @each $name, $tag in $tags{
+        --tag--#{ $name }: #{ $tag };
+    }
+
+    @each $name, $radius in $radiuses{
+        --#{ $name }: #{ $radius };
+    }
+
+    @each $name, $color in $colors{
+        --#{ $name }: #{ $color };
+    }
+
+    --block-padding-inline: #{ rem(40) };
+    --block-padding-block: #{ rem(32) };
+
+    --title-font: #{ $title-font };
+    --text-font: #{ $text-font };
+    
+    --text-color--invert:           var(--white);
+    --text-color:                   var(--blue-800);
+    --text-color--medium:           var(--blue-600);
+    --text-color--light:            var(--blue-400);
+    --text-color--lighter:          var(--blue-300);
+    --text-color--accent:           var(--green-500);
+    
+    --text-blue--accent:            var(--accent-blue-300);
+    --text-red--accent:             var(--red-500);
+
+    --title-color:                  var(--blue-800);
+    --title-color--medium:          var(--blue-600);
+    --title-color--light:           var(--blue-400);
+    --title-color--accent:          var(--green-500);
+    
+    --stroke-color--dark:           var(--blue-800);
+    --stroke-color--medium:         var(--blue-600);
+    --stroke-color:                 var(--blue-400);
+    --stroke-color--shade:          var(--blue-300);
+    --stroke-color--light:          var(--blue-100);
+    
+    --stroke-color--accent:         var(--green-500);
+    
+    --stroke-green--light:            var(--green-200);
+
+    --background-color:             var(--white);
+    --background-color--shade:      var(--blue-100);
+    --background-color--light:        var(--blue-150);
+    --background-color--lighter:    var(--blue-50);
+    --background-color--bright:       var(--blue-0);
+    
+    --background-color--accent:       var(--green-500);
+    
+    --background-yellow--lighter:   var(--yellow-50);
+    --background-red--lighter:      var(--red-50);
+    --background-orange--lighter:   var(--orange-50);
+    --background-grey--lighter:       var(--grey-50);
+    
+    --background-green--lighter:    var(--green-100);
+    --background-green--medium:     var(--green-300);
+
+    --drop-shadow: #{ $drop-shadow };
+
+    --transition-easing: #{ $transition-easing };
+    --transition-easing--in-out: #{ $transition-easing--in-out };
+    --transition-duration: #{ $transition-duration };
+    --transition: all #{ $transition-duration } #{ $transition-easing };
+}
